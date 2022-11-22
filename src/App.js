@@ -1,6 +1,5 @@
-
-import { Stage, PresentationControls} from '@react-three/drei'
-import {GULUM} from './components/GULUM'
+import { Stage, PresentationControls} from '@react-three/drei';
+import {GULUM} from './components/GULUM';
 import { Canvas } from "@react-three/fiber";
 
 function App() {
