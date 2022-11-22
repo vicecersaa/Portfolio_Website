@@ -40,5 +40,8 @@
   "engines": {
     "node": "v16.17.1",
     "npm": "8.19.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
