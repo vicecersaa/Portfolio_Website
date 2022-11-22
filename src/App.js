@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Stage, PresentationControls} from '@react-three/drei'
+import {GULUM} from './components/GULUM'
+import { Canvas } from "@react-three/fiber";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Canvas dpr={[1,2]} shadows camera={{ fov: 100 }} style={{"position": "absolute"}}>
+    <PresentationControls speed={1.5} global polar={[-0.1, Math.PI / 4]}> 
+      <Stage environment={"sunset"}>
+        <GULUM scale={0.0001} />
+      </Stage>
+    </PresentationControls>
+  </Canvas>
   );
 }
 
