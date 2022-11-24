@@ -34,6 +34,17 @@ body {
   background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
   margin-bottom: 10px;
   text-align: center;
+
+  animation: slide ease 0.4s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
 }
 
 .Header h3 {
@@ -43,6 +54,8 @@ body {
   opacity: .5;
   margin-bottom: 10px;
   text-align: center;
+
+  animation: slide ease 0.4s;
 }
 
 .Header p {
@@ -53,6 +66,7 @@ body {
   color: white;
 
   margin-bottom: 10px;
+  animation: slide ease 0.4s;
 }
 
 #canvas canvas {
@@ -68,6 +82,8 @@ body {
   margin: 0;
   margin-top: 50px;
   margin-left: 20px;
+
+  animation: fadeIn ease 0.6s
 }
 
 .portfolio {
@@ -148,6 +164,8 @@ body {
   align-items: center;
   width: 50%;
   margin-top: 80px;
+
+  animation: fadeIn ease 0.4s;
 }
 
 .button button {
@@ -178,15 +196,17 @@ body {
   margin-top: 80px;
   margin-left: 0;
   margin-right: 0;
-  animation: fadeIn ease 4s;
-
+  
+  
+  animation: fadeIn ease-in-out 0.5s;
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+
+  100% {
     opacity: 1;
   }
 }
