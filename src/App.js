@@ -7,7 +7,12 @@ import Portfolio from './components/Portfolio';
 import Timeline from './components/Timeline';
 import Skills from './components/Skills';
 import ButtonSect from './components/ButtonSect';
-import { useTransition, animated } from 'react-spring'
+import Contact from './components/Contact'
+import Footer from './components/Footer';
+import { createContext } from 'react';
+import Switch from './components/Switch';
+
+export const ThemeContext = createContext(null);
 
 function App() {
   const [skill, setSkill] = React.useState(false)
@@ -19,15 +24,30 @@ function App() {
     setTimeline(false)
   }
 
-  const openSectTimeline = () => {
-    setTimeline(true)
-    setSkill(false)
-  }
+  
 
- 
- 
+ const [theme, setTheme] = React.useState("dark")
+
+ const toggleTheme = () => {
+  setTheme((prev) => (prev === "dark" ? "light" : "dark"))
+ }
+
+ const openSectTimeline = () => {
+  setTimeline(true)
+  setSkill(false)
+}
   return (
-  <div className='App'>
+  <ThemeContext.Provider value={{ theme, toggleTheme }}>
+  <div className='App' id={theme}>
+    
+    {theme === "dark" && <Switch changeTheme={toggleTheme}
+      icon={theme === "dark" && <i class="fa-solid fa-sun"></i>}
+    />}
+    
+    {theme === "light" && <Switch changeTheme={toggleTheme}
+      icon={theme === "light" && <i class="fa-solid fa-moon"></i>}
+    />}
+
     <Header />
     <Canvas id="canvas" dpr={[1,2]} shadows camera={{ fov: 45 }}>
       <PresentationControls speed={1.5} global polar={[-0.1, Math.PI / 4]}> 
@@ -37,21 +57,35 @@ function App() {
       </PresentationControls>
     </Canvas>
     <Portfolio />
-    <ButtonSect
-      color={timeline && "white"}
-      color1={timeline && "black"}
-      color2={skill && "white"}
-      color3={skill && "black"}
+    {theme === "light" && <ButtonSect
+      color={timeline && theme === "light" && "black"}
+      color1={timeline && theme === "light" && "white"}
+      color2={skill && theme === "light" && "black"}
+      color3={skill && theme === "light" && "white"}
       button1={openSectTimeline}
       button2={openSectSkill}
-    />
+    />}
+
+    {theme === "dark" && <ButtonSect 
+      color={timeline && theme === "dark" && "white"}
+      color1={timeline && theme === "dark" && "black"}
+      color2={skill && theme === "dark" && "white"}
+      color3={skill && theme === "dark" && "black"}
+      button1={openSectTimeline}
+      button2={openSectSkill}
+    />}
+
     <div className='timeline-animation'>
       {timeline && <Timeline />}
     </div>
     <div className='skills-animation'>
       {skill && <Skills />}
     </div>
+
+    <Contact />
+    <Footer />
   </div>
+  </ThemeContext.Provider>
   );
 }
 
