@@ -1,7 +1,12 @@
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, useTexture } from '@react-three/drei'
+import * as THREE from 'three'
+
 
 export function GULUM(props) {
   const { nodes, materials } = useGLTF('/GULUM/GULUM-transformed.glb')
+  
+  
+
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object004.geometry} material={materials['Material #2']} position={[-0.11, 3, -0.26]} scale={0.03} />

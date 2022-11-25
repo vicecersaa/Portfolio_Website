@@ -27,14 +27,17 @@
 .switch {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
-  margin-inline: auto;
+  
+  width: 100%;
   padding-top: 30px;
+  right: 20%;
+  position: fixed;
 }
 
 .switch i {
   
-  padding: 3px;
+  padding: 3px 4px;
+  
   border: 2px solid #FDBA74;
   background-color: #FDBA74;
   color: black;
@@ -46,6 +49,8 @@
 #light .switch i {
   border: 2px solid #C4B5FD;
   background-color: #C4B5FD;
+  font-size: 15px;
+  padding: 3px 5px;
   color: black;
 }
 
@@ -175,17 +180,17 @@
 .portfolio-tags h3 {
   font-family: 'Inter', sans-serif;
   color: white;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-color: #DCD9D4;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
-  background-blend-mode: soft-light,screen;
+  
   font-weight: bolder;
   font-size: 20px;
   margin: 0;
   width: 90%;
   padding-top: 10px;
   margin-bottom: 18px;
+}
+
+#light .portfolio-tags h3 {
+  color: black;
 }
 
 .portfolio-tags p {
@@ -311,7 +316,7 @@
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 
@@ -403,6 +408,7 @@
   align-items: center;
   width: 80%;
   margin: 0;
+  margin-top: 25px;
 }
 
 .skills-props {
@@ -493,11 +499,20 @@
   flex-direction: column;
   align-items: center;
  
-  width: 50%;
+  width: 40%;
   margin-top: 80px;
   
   margin-inline: auto;
 }
+
+ form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 
 .contact input {
   display: flex;
@@ -524,7 +539,7 @@
   margin: 0;
   margin-top: 20px;
 
-  width: 65%;
+  width: 100%;
   max-width: 65%;
   height: 260px;
   background-color: #1C1917;
@@ -533,22 +548,23 @@
   padding: 10px;
   font-size: 16px;
   font-family: 'Inter', sans-serif;
-  color: grey;
+  color: white;
 }
 
 #light .contact textarea {
   background-color: #DDDFE5;
   border: 2px solid black;
-  color: grey;
+  color: black;
 }
 
 .contact-button {
   display: flex;
   justify-self: flex-start;
-  width: 35%;
+  width: 100%;
   
  
   margin-inline: auto;
+  margin-left: 110px;
   margin-bottom: 80px;
 }
 
@@ -624,7 +640,7 @@
 
 @media screen and (max-width: 768px) {
   .Header {
-    padding-top: 30px;
+    padding-top: 80px;
     width: 90%;
     padding-bottom: 24px;
   }
@@ -713,14 +729,15 @@
     max-width: 80%;
   }
 
+
   .contact-button {
     width: 100%;
+    margin-inline: 0;
   }
 
   .contact-button button {
-    width: 40%;
-    margin-left: 25px;
-   
+    width: 35%;
+    margin-left: 27px;
   }
 
   .footer {
@@ -742,7 +759,9 @@
   }
 
   .switch {
+    left: 15%;
     width: 80%;
+    right: 0%;
   }
 
 }

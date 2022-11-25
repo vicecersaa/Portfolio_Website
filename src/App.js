@@ -1,7 +1,7 @@
-import React from 'react'
-import { Stage, PresentationControls} from '@react-three/drei';
+import React, { Suspense, useState } from 'react'
+import { Stage, PresentationControls, PerformanceMonitor, OrbitControls, useTexture, Plane} from '@react-three/drei';
 import {GULUM} from './components/GULUM';
-import { Canvas } from "@react-three/fiber";
+import { Canvas, MeshStandardMaterial} from "@react-three/fiber";
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Timeline from './components/Timeline';
@@ -11,6 +11,12 @@ import Contact from './components/Contact'
 import Footer from './components/Footer';
 import { createContext } from 'react';
 import Switch from './components/Switch';
+import { Mesh } from 'three';
+
+
+
+
+
 
 export const ThemeContext = createContext(null);
 
@@ -24,7 +30,6 @@ function App() {
     setTimeline(false)
   }
 
-  
 
  const [theme, setTheme] = React.useState("dark")
 
@@ -32,10 +37,13 @@ function App() {
   setTheme((prev) => (prev === "dark" ? "light" : "dark"))
  }
 
+
  const openSectTimeline = () => {
   setTimeline(true)
   setSkill(false)
 }
+
+
   return (
   <ThemeContext.Provider value={{ theme, toggleTheme }}>
   <div className='App' id={theme}>
@@ -49,12 +57,17 @@ function App() {
     />}
 
     <Header />
-    <Canvas id="canvas" dpr={[1,2]} shadows camera={{ fov: 45 }}>
-      <PresentationControls speed={1.5} global polar={[-0.1, Math.PI / 4]}> 
+    
+   
+    <Canvas  id="canvas" performance={{ min: 0.5 }} dpr={[1,2]} shadows camera={{ fov: 50 }}>
+      <pointLight position={[10, 10, 10]} />
+      <PresentationControls speed={10} enableZoom={false} global polar={[-0.1, Math.PI / 4]}> 
+        <directionalLight color="blue" position={[10, 0, 0]} />
         <Stage environment={"forest"}>
-          <GULUM scale={0.003} />
+            <GULUM scale={0.003}/>
         </Stage>
       </PresentationControls>
+      <OrbitControls autoRotate enableZoom={false} />
     </Canvas>
     <Portfolio />
     {theme === "light" && <ButtonSect
