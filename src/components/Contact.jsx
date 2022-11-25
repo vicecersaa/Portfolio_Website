@@ -9,6 +9,7 @@ const Contact = () => {
         <h1>Contact Me</h1>
       </div>
       <form
+        target='blank'
         action="https://getform.io/f/03734071-4bd5-4614-9833-4bf1ef1c9e2a"
         method="POST"
         encType='multipart/form-data'
