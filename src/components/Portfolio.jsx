@@ -7,6 +7,7 @@ import DavidLight from '../assets/DavidLieWebsiteLight.PNG'
 const Portfolio = () => {
   return (
     <div className='portfolio-sect'>
+      <a target='blank' href='https://reactfiber.vercel.app/'>
       <PortfolioProps 
         img={DavidLie}
         title="Portfolio Website"
@@ -15,7 +16,8 @@ const Portfolio = () => {
         tag3="HTML"
         tag4="CSS"
       />
-
+      </a>
+    <a target='blank' href='https://heroku-appdeploy.herokuapp.com/'>
     <PortfolioProps 
         img={ForlandLiving}
         title="Ecommerce Website"
@@ -24,7 +26,8 @@ const Portfolio = () => {
         tag3="CSS"
         tag4="JAVASCRIPT"
       />
-
+    </a>
+    <a target='blank' href='https://reactfiber.vercel.app/'>
       <PortfolioProps 
         img={DavidLight}
         title="Portfolio Website"
@@ -33,7 +36,9 @@ const Portfolio = () => {
         tag3="HTML"
         tag4="CSS"
       />
+      </a>
     </div>
+    
   )
 }
 

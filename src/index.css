@@ -123,13 +123,24 @@
 #canvas canvas {
   width: 40%;
   height: 300px;
+
+  animation: fallDown 3s;
+}
+
+@keyframes fallDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .portfolio-sect {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 80%;
   
   margin-inline: auto;
   
@@ -139,15 +150,27 @@
   animation: fadeIn ease 0.6s;
 }
 
-.portfolio {
+.portfolio-sect a {
+  width: 20%;
+  text-decoration: none;
   margin-right: 20px;
-  width: 50%;
+}
+
+.portfolio {
+  
+  width: 100%;
   max-height: 500px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
+  margin-inline: auto;
   border-radius: 10px;
   border: 2px solid whitesmoke;
+  cursor: pointer;
 }
+
+
+
 
 #light .portfolio {
   border: 2px solid black;
@@ -625,6 +648,10 @@
   margin: 0;
 }
 
+.footer-social a {
+  text-decoration: none;
+}
+
 .footer-social i {
   display: flex;
   justify-content: center;
@@ -658,14 +685,28 @@
   }
 
   .portfolio-sect {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
+    margin-right: 0;
     width: 100%;
   }
 
+  .portfolio-sect a {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-inline: auto;
+  }
+
   .portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 0;
     width: 75%;
     margin-bottom: 20px;
+    margin-left: 0;
   }
 
   .button {

@@ -3,7 +3,7 @@ import * as THREE from 'three'
 
 
 export function GULUM(props) {
-  const { nodes, materials } = useGLTF('/GULUM/GULUM-transformed.glb')
+  const { nodes, materials } = useGLTF('/GULUM/GULUM1.glb')
   
   
 
@@ -19,4 +19,4 @@ export function GULUM(props) {
   )
 }
 
-useGLTF.preload('/GULUM/GULUM-transformed.glb')
+useGLTF.preload('/GULUM/GULUM1.glb')
