@@ -17,7 +17,7 @@ const Portfolio = () => {
         tag4="CSS"
       />
       </a>
-    <a target='blank' href='www.forlandliving.com'>
+    <a target='blank' href='forlandliving.com'>
     <PortfolioProps 
         img={ForlandLiving}
         title="Ecommerce Website"
