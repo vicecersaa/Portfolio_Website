@@ -4,10 +4,10 @@ import HTML from '../assets/HTML.png'
 import CSS from '../assets/CSS.png'
 import Javascript from '../assets/JS.png'
 import ReactJS from '../assets/REACTJS.png'
-import NodeJs from '../assets/NODEJS.PNG'
-import MongoDb from '../assets/MONGODB.PNG'
-import MySql from '../assets/MYSQL.PNG'
-import ThreeJs from '../assets/THREEJS.PNG'
+import NodeJs from '../assets/NODEJS.png'
+import MongoDb from '../assets/MONGODB.png'
+import MySql from '../assets/MYSQL.png'
+import ThreeJs from '../assets/THREEJS.png'
 
 const Skills = (props) => {
   return (
