@@ -4,6 +4,10 @@ import HTML from '../assets/HTML.png'
 import CSS from '../assets/CSS.png'
 import Javascript from '../assets/JS.png'
 import ReactJS from '../assets/REACTJS.png'
+import NodeJs from '../assets/NODEJS.PNG'
+import MongoDb from '../assets/MONGODB.PNG'
+import MySql from '../assets/MYSQL.PNG'
+import ThreeJs from '../assets/THREEJS.PNG'
 
 const Skills = (props) => {
   return (
@@ -49,7 +53,7 @@ const Skills = (props) => {
       />
 
       <SkillsProps 
-        logo={ReactJS}
+        logo={NodeJs}
         title="NodeJs"
         tag="Beginner"
         text="I'm still a beginner in NodeJs, still learning a lot of stuff related to NodeJs but i can
@@ -57,14 +61,14 @@ const Skills = (props) => {
       />
 
       <SkillsProps 
-        logo={ReactJS}
+        logo={MongoDb}
         title="MongoDB"
         tag="Intermediate"
         text="Been working with MongoDb Database quite a lot and been allready familiar with it."
       />
 
       <SkillsProps 
-        logo={ReactJS}
+        logo={MySql}
         title="MySql"
         tag="Intermediate"
         text="Creating database in MySql was quite a bit hard for the first time but no probs i allready getting
@@ -72,7 +76,7 @@ const Skills = (props) => {
       />
 
       <SkillsProps 
-        logo={ReactJS}
+        logo={ThreeJs}
         title="ThreeJs"
         tag="Intermediate"
         text="Learning to put some 3d Models to my portfolio website was a struggle at the beginning but i continue learning it 
