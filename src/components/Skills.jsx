@@ -5,7 +5,7 @@ import CSS from '../assets/CSS.png'
 import Javascript from '../assets/JS.png'
 import ReactJS from '../assets/REACTJS.png'
 import NodeJs from '../assets/nodejs.png'
-import MongoDb from '../assets/mongodb.png'
+import MongoDb from '../assets/JS.png'
 import MySql from '../assets/MYSQL.png'
 import ThreeJs from '../assets/THREEJS.png'
 
