@@ -4,9 +4,9 @@ const Header = () => {
   return (
     <div className='Header'>
       <h1>David Lie</h1>
-      <h3>Frontend Developer & Web Developer</h3>
+      <h3>Fullstack Engineer & Web Developer</h3>
       <p>
-        I'm an Frontend Developer and Web Developer, 
+        I'm an Fullstack Engineer and Web Developer, 
         developing my version of the digital world one step at a time. 
         All my projects are build from scratch,
         from planning and designing to solving problems with code.
