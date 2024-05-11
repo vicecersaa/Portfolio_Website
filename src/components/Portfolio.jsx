@@ -1,7 +1,7 @@
 import React from 'react'
 import PortfolioProps from '../props/PortfolioProps'
 import ForlandLiving from '../assets/FORLAND.png'
-import DavidLie from '../assets/DavidLieWebsite.png'
+import DavidLie from '../assets/comingsoon.jpg'
 import DavidLight from '../assets/DavidLieWebsiteLight.PNG'
 
 const Portfolio = () => {
