@@ -48,6 +48,37 @@ const Skills = (props) => {
               useEffect and many other stuff in react."
       />
 
+      <SkillsProps 
+        logo={ReactJS}
+        title="NodeJs"
+        tag="Beginner"
+        text="I'm still a beginner in NodeJs, still learning a lot of stuff related to NodeJs but i can
+              allready write code with it and willingly to learn more deeply into it."
+      />
+
+      <SkillsProps 
+        logo={ReactJS}
+        title="MongoDB"
+        tag="Intermediate"
+        text="Been working with MongoDb Database quite a lot and been allready familiar with it."
+      />
+
+      <SkillsProps 
+        logo={ReactJS}
+        title="MySql"
+        tag="Intermediate"
+        text="Creating database in MySql was quite a bit hard for the first time but no probs i allready getting
+              used to it."
+      />
+
+      <SkillsProps 
+        logo={ReactJS}
+        title="ThreeJs"
+        tag="Intermediate"
+        text="Learning to put some 3d Models to my portfolio website was a struggle at the beginning but i continue learning it 
+              and eventually i got it nicely done."
+      />
+
     </div>
     </div>
   )
