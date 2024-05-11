@@ -7,7 +7,7 @@ const Footer = () => {
       <a target="blank" alt="david" href='https://www.instagram.com/davidliefc/'>
         <i class="fa-brands fa-instagram"></i>
       </a>
-      <a target="blank" alt='vicece' href='https://github.com/vicece/'> 
+      <a target="blank" alt='vicece' href='https://github.com/vicecersaa'> 
         <i class="fa-brands fa-github"></i>
       </a>
       <a target="blank" alt='davidlielink' href='https://www.linkedin.com/in/david-lie-45b423258/'>
@@ -17,7 +17,7 @@ const Footer = () => {
         <i class="fa-brands fa-whatsapp"></i>
       </a>
       </div>  
-      <p>© 2022 David Lie. All rights reserved.</p>
+      <p>© 2021 David Lie. All rights reserved.</p>
     </div>
   )
 }
