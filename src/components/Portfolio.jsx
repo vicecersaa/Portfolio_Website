@@ -21,10 +21,10 @@ const Portfolio = () => {
     <PortfolioProps 
         img={ComingSoon}
         title="Ecommerce Website"
-        tag1="-"
-        tag2="-"
-        tag3="-"
-        tag4="-"
+        tag1="Soon"
+        tag2="Soon"
+        tag3="Soon"
+        tag4="Soon"
       />
     </a>
     <a target='blank' href='https://reactfiber.vercel.app/'>
