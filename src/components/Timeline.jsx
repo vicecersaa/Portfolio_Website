@@ -12,48 +12,44 @@ const Timeline = () => {
       <h1>Timeline</h1>
       </div>
       <TimelineProps 
-        time="2022"
-        tag="First Line of Code"
+        time="2021"
+        tag="Starting The Journey Of Code"
         date="The Beginning"
-        text="I wrote my first line of code that started this path
+        text="This is my first time trying to grasp all that i learned from college, started this path
               into the digital world that i never could've imagine,
               Code change me into a whole different person."
       />
       
       <TimelineProps   
         time="2022"
-        tag="Learning HTML"
+        tag="First Time Freelancing"
         date="First Month"
-        text="The first month of learning coding was the most
-              challenging part of my journey, i need to get used
-              to the new language that i'm learning."
+        text="The first time freelancing was quite a bit rough have a lot of basics needed 
+              to accomplish the work but still struggling for some issues but i get through it."
       />
       
       <TimelineProps   
-        time="2022"
-        tag="Learning CSS"
-        date="Second Month"
-        text="Learning CSS is the most fun part of it all and at 
-              the same time also the most stressful because sometimes 
-              what we want is not necessarily easy to apply."
+        time="2022 - 2023"
+        tag="First Time Employed"
+        date="First Month"
+        text="Getting the first job was quite easy due to my experience on working freelance for about almost a year,
+              i learned a lot from this company including SEO and Content Writing."
       />
 
       <TimelineProps   
-        time="2022"
-        tag="Learning Javascript"
-        date="Third Month"
-        text="Learned Javascript from Free Code Camp makes me realize that
-              we could do anything litterally in Coding, this was the
-              reason im in love with coding."
+        time="2023 - 2024"
+        tag="Getting Back To Freelancing"
+        date="First Day"
+        text="The reason i quit my job is not only for freelancing but to enhance my portfolio skills
+              aswell."
       />
 
       <TimelineProps   
-        time="2022"
-        tag="Learning React"
-        date="Foured Month"
-        text="Learning React was HARD but at the same time it gives me
-              confident to take it a step further into the world of coding,
-              it lets me to have a more organize code."
+        time="2024"
+        tag="Freelance"
+        date="Present"
+        text="I got a quite lot of freelancing project base on contract from a couple of company
+              in this particular field."
       />
     </div>
       
