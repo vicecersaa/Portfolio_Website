@@ -64,7 +64,8 @@ const Skills = (props) => {
         logo={MongoDb}
         title="MongoDB"
         tag="Intermediate"
-        text="Been working with MongoDb Database quite a lot and been allready familiar with it."
+        text="Been working with MongoDb Database quite a lot and been already quite familiar with it and
+              easy to use overall."
       />
 
       <SkillsProps 
