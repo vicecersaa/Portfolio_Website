@@ -63,7 +63,7 @@ function App() {
     <Canvas id="canvas" performance={{ min: 1 }} dpr={[1,2]} camera={{ fov: 45 }}>
       <PresentationControls speed={10} enableZoom={false} global polar={[0, Math.PI / 2]}> 
         <directionalLight color="blue" />
-        <Stage environment={"forest"}>
+        <Stage environment={""}>
             <GULUM scale={0.003}/>
         </Stage>
       </PresentationControls>
